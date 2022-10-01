@@ -7,20 +7,19 @@ scale2 = 0;
 let timer = document.getElementById("timer");
 let Array = [1];
 
-// få visarane te å spinna i klokko samt sekundtelljar
+// få visarane te å spinna i klokko samt ms-counter
 function btn() {
 if (!scale) {
     tids = setInterval (() => {
-        timer.textContent = Array[0]++ + "0" +"ms";
-    }, 10);
+        timer.textContent = Array[0]++ + "0" + "ms";
+        }, 10);
     slider.style.animationPlayState = "running"
     slider2.style.animationPlayState = "running"
     slider3.style.animationPlayState = "running"
     scale = 1
  return
 } else {
-   clearInterval(tids)
-        timer.textContent = 0;
+    clearInterval(tids)
     slider.style.animationPlayState = "paused"
     slider2.style.animationPlayState = "paused"
     slider3.style.animationPlayState = "paused"
@@ -32,7 +31,7 @@ if (!scale) {
 let bodyy = document.getElementsByName("body")
 function btn2() {
     if (!scale2) {
-       document.body.style.animationPlayState = "running"
+        document.body.style.animationPlayState = "running"
         scale2 = 1
     } else {
         document.body.style.animationPlayState = "paused"
