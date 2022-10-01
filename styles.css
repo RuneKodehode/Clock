@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(grey, orange);
+    background: linear-gradient(247deg, #4b178c, #290033);
     height: 100vh;
     animation: spinn 1s linear infinite ;
     animation-play-state: paused;
@@ -14,16 +14,26 @@ h1 {
     width: 300px;
     padding: 10px 0px 10px 0px;
     border-radius: 20px;
-    background-color: grey;
+    background-color: wheat;
 }
 
+h2 {
+    margin: 40px auto 0px auto;
+    text-align: center;
+    border: 3px solid black;
+    width: 300px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+    background-color: wheat;
+    height: 30px;
+}
 button {
     margin-top: 100px;
     margin-left: 30%;
     margin-right: auto;
     height: 40px;
     border-radius: 8px;
-    background: grey;
+    background: wheat;
     font-weight: 800;
     border: 2px solid black
 }
@@ -48,9 +58,13 @@ button:active {
     bottom: 0;
     width: 520px;
     height: 520px;
-    border: 15px solid black;
+    border-width: 10px;
+    border-style: solid;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
     border-radius: 100%;
-    background:linear-gradient(orange, darkgrey)
+    background:linear-gradient(247deg, #4b178c, #290033);
+    box-shadow: 0px 0px 200px white;
 }
 
 #indreKlokko {
